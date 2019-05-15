@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/c_60dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/c_18dp"
+        android:layout_height="@dimen/c_18dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/positioning_32"
+        app:layout_constraintBottom_toBottomOf="@+id/item_messages_departure"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/item_messages_departure"
+        />
+
+    <ImageView
+        android:id="@+id/recommend_arrow_view2"
+        android:layout_width="@dimen/c_22dp"
+        android:layout_height="@dimen/c_10dp"
+        android:layout_marginStart="@dimen/c_8dp"
+        android:src="@drawable/ic_jiantou_apply2"
+        app:layout_constraintBottom_toBottomOf="@+id/item_messages_departure"
+        app:layout_constraintStart_toEndOf="@+id/item_messages_departure"
+        app:layout_constraintTop_toTopOf="@+id/item_messages_departure" />
+
+    <TextView
+        android:id="@+id/item_messages_departure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/c_8dp"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text="重庆邮电大学"
+        android:maxWidth="@dimen/c_160dp"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="@dimen/c_14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_messages_end"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/c_8dp"
+        android:layout_marginEnd="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="大学城"
+        android:gravity="left"
+        android:textAllCaps="false"
+        android:textColor="#333333"
+        android:textSize="@dimen/c_14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_messages_departure"
+        app:layout_constraintEnd_toStartOf="@+id/item_messages_numb"
+        app:layout_constraintStart_toEndOf="@+id/recommend_arrow_view2"
+        app:layout_constraintTop_toTopOf="@+id/item_messages_departure" />
+
+    <TextView
+        android:id="@+id/item_messages_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/c_16dp"
+        android:layout_marginTop="@dimen/c_8dp"
+        android:layout_marginEnd="@dimen/c_14dp"
+        android:layout_marginBottom="@dimen/c_8dp"
+        android:background="@drawable/stroke_circle"
+        android:gravity="center"
+        android:text="99"
+        android:textColor="#ffffff"
+        android:minWidth="@dimen/c_16dp"
+        android:textSize="@dimen/c_12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0.7dp"
+        android:background="#ECECEC"
+        app:layout_constraintStart_toStartOf="@id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 实心 -->
+    <solid android:color="#fefefe" />
+    <!-- 边框 -->
+    <stroke
+        android:width="0.5dp"
+        android:color="#E0E0E0" />
+
+    <!-- 设置各边倒角大小 -->
+    <corners android:radius="@dimen/c_12dp"/>
+</shape>
+
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--&lt;!&ndash;阴影&ndash;&gt;-->
+    <!--<item>-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<gradient-->
+                <!--android:angle="315"-->
+                <!--android:endColor="#ECECEC"-->
+                <!--android:startColor="#ffffff"/>-->
+
+            <!--<corners-->
+                <!--android:bottomLeftRadius="@dimen/c_12dp"-->
+                <!--android:bottomRightRadius="@dimen/c_12dp"-->
+                <!--android:topLeftRadius="@dimen/c_12dp"-->
+                <!--android:topRightRadius="@dimen/c_12dp"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <!--&lt;!&ndash;阴影&ndash;&gt;-->
+
+    <!--&lt;!&ndash;白色背景&ndash;&gt;-->
+    <!--<item-->
+        <!--android:left="1dp"-->
+        <!--android:top="1dp"-->
+        <!--android:bottom="3dp"-->
+        <!--android:right="3dp">-->
+
+        <!--<shape android:shape="rectangle">-->
+            <!--<gradient-->
+                <!--android:angle="270"-->
+                <!--android:endColor="#FFFFFF"-->
+                <!--android:startColor="#FFFFFF"/>-->
+
+            <!--<corners-->
+                <!--android:bottomLeftRadius="@dimen/c_12dp"-->
+                <!--android:bottomRightRadius="@dimen/c_12dp"-->
+                <!--android:topLeftRadius="@dimen/c_12dp"-->
+                <!--android:topRightRadius="@dimen/c_12dp"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+<!--</layer-list>-->

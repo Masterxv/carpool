@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/c_130dp"
+    android:gravity="center">
+
+    <com.campussay.carpool.ui.post.PostNumberPicker
+        android:id="@+id/post_month"
+        android:layout_width="@dimen/c_30dp"
+        android:layout_height="match_parent" />
+
+    <com.campussay.carpool.ui.post.PostNumberPicker
+        android:id="@+id/post_day"
+        android:layout_width="@dimen/c_30dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/c_30dp"/>
+
+    <com.campussay.carpool.ui.post.PostNumberPicker
+        android:id="@+id/post_hour"
+        android:layout_width="@dimen/c_30dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/c_30dp"/>
+
+    <com.campussay.carpool.ui.post.PostNumberPicker
+        android:id="@+id/post_minute"
+        android:layout_width="@dimen/c_30dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/c_30dp"/>
+
+
+</LinearLayout>

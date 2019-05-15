@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/c_8dp"
+    android:paddingEnd="@dimen/c_5dp"
+    android:paddingBottom="@dimen/c_5dp">
+
+    <ImageView
+        android:id="@+id/friend_father_iv_head"
+        android:layout_width="@dimen/c_40dp"
+        android:layout_height="@dimen/c_40dp"
+        android:src="@drawable/meizi7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/friend_father_tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/c_12dp"
+        android:text="好友名"
+        android:textColor="#010101"
+        android:textSize="@dimen/c_16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/friend_father_iv_head"
+        app:layout_constraintStart_toEndOf="@+id/friend_father_iv_head"
+        app:layout_constraintTop_toTopOf="@+id/friend_father_iv_head"
+        />
+
+    <Button
+        android:id="@+id/friend_father_btn_chat"
+        android:layout_width="@dimen/c_48dp"
+        android:layout_height="@dimen/c_22dp"
+        android:layout_marginEnd="@dimen/c_8dp"
+        android:background="@drawable/self_btn_round"
+        android:text="交流"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/c_14dp"
+        android:gravity="center"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/friend_father_iv_head"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/friend_father_iv_head" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/friend_father_first_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friend_father_iv_head">
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="@dimen/c_290dp"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="@dimen/c_4dp"
+            android:background="#ECECEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/c_16dp"
+            android:layout_height="@dimen/c_16dp"
+            android:src="@drawable/positioning_32"
+            app:layout_constraintBottom_toBottomOf="@+id/item_child_departure"
+            app:layout_constraintStart_toStartOf="@+id/view8"
+            app:layout_constraintTop_toTopOf="@+id/item_child_departure" />
+
+        <TextView
+            android:id="@+id/item_child_departure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/c_4dp"
+            android:layout_marginTop="@dimen/c_8dp"
+            android:text="重庆邮电大学"
+            android:textColor="#333333"
+            android:textSize="@dimen/c_13dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/c_110dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+        <ImageView
+            android:src="@drawable/ic_jiantou_apply2"
+            android:id="@+id/recommend_arrow_view"
+            android:layout_width="@dimen/c_18dp"
+            android:layout_height="@dimen/c_8dp"
+            android:layout_marginStart="@dimen/c_8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_child_departure"
+            app:layout_constraintStart_toEndOf="@+id/item_child_departure"
+            app:layout_constraintTop_toTopOf="@+id/item_child_departure" />
+
+        <TextView
+            android:id="@+id/item_child_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/c_8dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/c_140dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="大学城"
+            android:textColor="#333333"
+            android:textSize="@dimen/c_13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/item_child_departure"
+            app:layout_constraintEnd_toStartOf="@+id/item_father_more"
+            app:layout_constraintStart_toEndOf="@+id/recommend_arrow_view"
+            app:layout_constraintTop_toTopOf="@+id/item_child_departure" />
+
+        <TextView
+            android:id="@+id/item_child_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/c_4dp"
+            android:text="今天 13:25"
+            android:textAllCaps="false"
+            android:textColor="#666666"
+            android:textSize="@dimen/c_12dp"
+            app:layout_constraintStart_toStartOf="@+id/item_child_departure"
+            app:layout_constraintTop_toBottomOf="@+id/item_child_departure" />
+
+        <ImageView
+            android:id="@+id/item_father_more"
+            android:layout_width="@dimen/c_17dp"
+            android:layout_height="@dimen/c_14dp"
+            android:layout_marginEnd="@dimen/c_18dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_down_jiantou"
+            app:layout_constraintBottom_toBottomOf="@+id/item_child_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/item_child_end" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

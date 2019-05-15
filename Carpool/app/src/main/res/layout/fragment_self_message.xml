@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/self_messages_fresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/self_messages_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fbfbfb"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout
+        android:id="@+id/self_message_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false">
+        <ImageView
+            android:id="@+id/self_message_null_image"
+            android:src="@drawable/img_not_message"
+            android:layout_width="@dimen/c_200dp"
+            android:layout_height="@dimen/c_200dp"
+            android:scaleType="fitStart"
+            android:layout_marginTop="@dimen/c_110dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/self_message_null_text"
+            android:text="还没有最新消息，下拉刷新吧~"
+            android:textSize="@dimen/c_13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/c_110dp"
+            android:layout_alignTop="@+id/self_message_null_image"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

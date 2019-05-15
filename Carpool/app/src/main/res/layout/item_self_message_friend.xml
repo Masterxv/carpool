@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/c_5dp">
+
+    <ImageView
+        android:id="@+id/item_friend_head"
+        android:layout_width="@dimen/c_40dp"
+        android:layout_height="@dimen/c_40dp"
+        android:layout_marginStart="@dimen/c_8dp"
+        android:layout_marginTop="@dimen/c_6dp"
+        android:layout_marginBottom="@dimen/c_2dp"
+        android:src="@drawable/meizi7" />
+
+    <TextView
+        android:id="@+id/item_friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_friend_head"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/c_8dp"
+        android:layout_toEndOf="@+id/item_friend_head"
+        android:gravity="center"
+        android:text="好友名"
+        android:textAllCaps="false"
+        android:textColor="#010101"
+        android:textSize="@dimen/c_15dp" />
+
+    <TextView
+        android:id="@+id/item_friend_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/item_friend_name"
+        android:layout_alignBottom="@+id/item_friend_head"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="1dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginEnd="@dimen/c_35dp"
+        android:text="最新消息显示"
+        android:textSize="@dimen/c_11dp" />
+
+    <TextView
+        android:id="@+id/item_friend_numb"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/c_16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/c_9dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/friend_circle"
+        android:minWidth="@dimen/c_16dp"
+        android:text="99"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/c_12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="#ECECEC"
+        android:layout_marginTop="@dimen/c_6dp"
+        android:layout_below="@+id/item_friend_message"
+        android:layout_alignStart="@id/item_friend_head"/>
+
+</RelativeLayout>

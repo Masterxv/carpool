@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="TabLayoutTextStyle"><!--TabLayout栏里的字体大小-->
+        <item name="android:textSize">@dimen/c_16dp</item>
+    </style>
+
+    <!--加载框的主题-->
+    <style name="loadDialogTheme" parent="@android:style/Theme.Dialog">
+            <item name="android:windowFrame">@null</item> <!--无边框-->
+            <item name="android:windowIsFloating">true</item><!--悬浮在父界面之上-->
+            <item name="android:windowIsTranslucent">true</item><!--允许呈现半透明状态-->
+            <item name="android:windowNoTitle">true</item><!--无标题-->
+            <item name="android:windowBackground">@android:color/transparent</item> <!--透明背景-->
+            <item name="android:backgroundDimEnabled">true</item> <!-- 允许周围模糊 -->
+            <item name="android:backgroundDimAmount">0.6</item><!--设置模糊灰度-->
+    </style>
+
+</resources>

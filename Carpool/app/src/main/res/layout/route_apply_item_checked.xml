@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/c_100dp"
+        android:layout_marginBottom="@dimen/c_8dp"
+        android:background="@drawable/route_apply">
+
+        <TextView
+            android:id="@+id/apply_item_checked_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/c_16dp"
+            android:layout_marginTop="@dimen/c_8dp"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/c_110dp"
+            android:text="重庆邮电大学"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="@dimen/c_15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/arrow_view"
+            android:layout_width="@dimen/c_22dp"
+            android:layout_height="@dimen/c_5dp"
+            android:layout_marginStart="@dimen/c_8dp"
+            android:src="@drawable/ic_jiangtou_apply1"
+            app:layout_constraintBottom_toBottomOf="@+id/apply_item_checked_start"
+            app:layout_constraintStart_toEndOf="@+id/apply_item_checked_start"
+            app:layout_constraintTop_toTopOf="@+id/apply_item_checked_start" />
+
+        <TextView
+            android:id="@+id/apply_item_checked_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/c_8dp"
+            android:layout_marginEnd="@dimen/c_8dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="四公里(地铁站)"
+            android:textColor="#000000"
+            android:textSize="@dimen/c_15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/arrow_view"
+            app:layout_constraintEnd_toEndOf="@+id/apply_item_iv_top_right"
+            app:layout_constraintStart_toEndOf="@+id/arrow_view"
+            app:layout_constraintTop_toTopOf="@+id/arrow_view" />
+
+        <View
+            android:id="@+id/apply_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_1dp"
+            android:layout_marginStart="@dimen/c_12dp"
+            android:layout_marginEnd="@dimen/c_18dp"
+            android:layout_marginTop="8dp"
+            android:background="#EEEDED"
+            app:layout_constraintEnd_toEndOf="@+id/apply_item_checked_result"
+            app:layout_constraintStart_toStartOf="@id/apply_item_checked_start"
+            app:layout_constraintTop_toBottomOf="@+id/apply_item_checked_start" />
+
+        <TextView
+            android:id="@+id/apply_item_checked_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/c_4dp"
+            android:text="2019/4/12"
+            android:textColor="#000000"
+            android:textSize="@dimen/c_13dp"
+            app:layout_constraintStart_toStartOf="@+id/apply_item_checked_start"
+            app:layout_constraintTop_toBottomOf="@id/apply_item_line" />
+
+        <com.campussay.carpool.ui.self.view.XCRoundImageView
+            android:id="@+id/apply_item_checked_head"
+            android:layout_width="@dimen/c_25dp"
+            android:layout_height="@dimen/c_25dp"
+            android:layout_marginTop="@dimen/c_8dp"
+            android:src="@drawable/meizi7"
+            app:layout_constraintStart_toStartOf="@id/apply_item_checked_date"
+            app:layout_constraintTop_toBottomOf="@id/apply_item_checked_date" />
+
+        <TextView
+            android:id="@+id/apply_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zhf2333"
+            android:textColor="#969696"
+            android:textSize="@dimen/c_13dp"
+            android:layout_marginStart="@dimen/c_8dp"
+            android:layout_marginBottom="@dimen/c_2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/apply_item_checked_head"
+            app:layout_constraintStart_toEndOf="@id/apply_item_checked_head"
+            app:layout_constraintTop_toTopOf="@+id/apply_item_checked_head" />
+
+        <TextView
+            android:id="@+id/apply_item_checked_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/c_20dp"
+            android:text="已同意"
+            android:textColor="#2d2d2d"
+            android:textSize="@dimen/c_14dp"
+            android:layout_marginTop="@dimen/c_5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/apply_item_checked_head"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/apply_item_checked_date" />
+
+
+        <ImageView
+            android:id="@+id/apply_item_iv_top_right"
+            android:layout_width="@dimen/c_30dp"
+            android:layout_height="@dimen/c_30dp"
+            android:src="@drawable/img_top_right1"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</FrameLayout>

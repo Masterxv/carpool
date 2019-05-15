@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/no_recommend_xml"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#fbfbfb"
+    android:orientation="vertical">
+
+    <!--android:background="@color/standardBackgroundColor"-->
+
+
+    <ImageView
+        android:id="@+id/recommend_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/c_8dp"
+        android:layout_marginStart="@dimen/c_12dp"
+        android:layout_marginEnd="@dimen/c_12dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/img_recommend_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/post_clock"
+        android:layout_width="@dimen/c_12dp"
+        android:layout_height="@dimen/c_15dp"
+        android:layout_marginStart="@dimen/c_20dp"
+        android:src="@drawable/ic_didian"
+        app:layout_constraintStart_toStartOf="@id/recommend_top"
+        app:layout_constraintTop_toTopOf="@id/recommend_top"
+        android:layout_marginTop="@dimen/c_40dp" />
+
+    <TextView
+        android:id="@+id/recommend_location"
+        android:layout_width="@dimen/c_200dp"
+        android:layout_height="@dimen/c_20dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:text="位置信息未知"
+        android:textSize="17dp"
+        app:layout_constraintTop_toTopOf="@id/post_clock"
+        app:layout_constraintBottom_toBottomOf="@id/post_clock"
+        app:layout_constraintStart_toEndOf="@id/post_clock"
+        android:layout_marginStart="@dimen/c_12dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/post_user"
+        android:layout_width="@dimen/c_14dp"
+        android:layout_height="@dimen/c_22dp"
+        android:src="@drawable/ic_group"
+        app:layout_constraintStart_toStartOf="@id/post_clock"
+        app:layout_constraintEnd_toEndOf="@id/post_clock"
+        app:layout_constraintTop_toBottomOf="@id/post_clock"
+        android:layout_marginTop="@dimen/c_20dp"/>
+
+    <TextView
+        android:id="@+id/recommend_master_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start|bottom"
+        android:text="在线人数："
+        android:textColor="#ffffff"
+        android:textSize="@dimen/c_14dp"
+        app:layout_constraintTop_toTopOf="@id/post_user"
+        app:layout_constraintBottom_toBottomOf="@id/post_user"
+        app:layout_constraintStart_toStartOf="@id/recommend_location"/>
+
+    <Button
+        android:id="@+id/post_join"
+        android:layout_width="@dimen/c_91dp"
+        android:layout_height="@dimen/c_26dp"
+        android:layout_marginStart="@dimen/c_4dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/recommend_button_people"
+        android:text="进入群聊"
+        android:textColor="#fcc530"
+        app:layout_constraintStart_toStartOf="@id/post_user"
+        app:layout_constraintTop_toBottomOf="@id/post_user"
+        android:layout_marginTop="@dimen/c_18dp"
+        android:textSize="14dp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/c_70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/post_join"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/no_recommend_view"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/c_220dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/c_50dp"
+            android:src="@drawable/img_not_recommend"/>
+
+        <TextView
+            android:id="@+id/no_recommend_view_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="当前还没推荐哦~"
+            android:layout_marginTop="@dimen/c_130dp"
+            android:layout_alignTop="@id/no_recommend_view"
+            android:textSize="@dimen/c_13dp"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/recommend_swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recommend_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="@dimen/c_16dp"
+                android:paddingEnd="@dimen/c_16dp"
+                android:layout_gravity="center_horizontal">
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

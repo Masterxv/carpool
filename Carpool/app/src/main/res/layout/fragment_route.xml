@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/standardBackgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:layerType="software"
+        android:layout_above="@id/oval2"
+        android:layout_marginBottom="@dimen/c_16dp"
+        android:layout_alignParentBottom="true">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/route_viewPager"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/c_25dp"
+            android:layout_marginRight="@dimen/c_25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/c_18dp">
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+        <View
+            android:id="@+id/oval1"
+            android:layout_toLeftOf="@+id/oval2"
+            android:layout_marginEnd="@dimen/c_26dp"
+            android:layout_width="@dimen/c_9dp"
+            android:layout_height="@dimen/c_9dp"
+            android:layout_toStartOf="@id/oval2"
+            android:layout_alignTop="@id/oval2"
+            android:background="@drawable/route_oval_white" />
+
+        <View
+            android:id="@+id/oval2"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/c_9dp"
+            android:layout_height="@dimen/c_9dp"
+            android:layout_marginBottom="@dimen/c_10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/route_oval_white" />
+
+        <View
+            android:id="@+id/oval3"
+            android:layout_toEndOf="@+id/oval2"
+            android:layout_marginStart="@dimen/c_26dp"
+            android:layout_width="@dimen/c_9dp"
+            android:layout_height="@dimen/c_9dp"
+            android:layout_alignTop="@id/oval2"
+            android:background="@drawable/route_oval_white" />
+
+</RelativeLayout>

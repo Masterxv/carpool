@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfbfb"
+    xmlns:tools="http://schemas.android.com/tools">
+<android.support.v4.widget.SwipeRefreshLayout
+    android:layout_width="match_parent"
+    android:id="@+id/self_friend_fresh"
+    android:layout_height="match_parent">
+    <ExpandableListView
+        android:id="@+id/self_friend_elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#ECECEC"
+        android:paddingStart="@dimen/c_10dp"
+        android:dividerHeight="1dp"
+        android:childDivider="@android:color/transparent"
+        />
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/self_friend_null"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/self_friend_null_image"
+            android:src="@drawable/img_not_friends"
+            android:layout_width="@dimen/c_200dp"
+            android:layout_height="@dimen/c_200dp"
+            android:scaleType="fitStart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/c_110dp"/>
+
+        <TextView
+            android:id="@+id/self_friend_null_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/self_friend_null_image"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/c_110dp"
+            android:text="你还没有好友哦，下拉刷新吧~"
+            android:textSize="@dimen/c_13dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

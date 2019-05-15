@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <View
+            android:id="@+id/route_apply_ll_left"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/c_1dp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/c_12dp"
+            android:layout_gravity="center"
+            android:background="#99FFFFFF" />
+
+        <TextView
+            android:id="@+id/route_apply_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="显示更多"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:textColor="#E0E0E0"
+            android:layout_marginTop="@dimen/c_20dp"
+            android:layout_marginBottom="@dimen/c_20dp"
+            android:textSize="@dimen/c_13dp" />
+
+        <ImageView
+            android:id="@+id/route_apply_iv"
+            android:layout_width="@dimen/c_11dp"
+            android:layout_height="@dimen/c_5dp"
+            android:src="@drawable/ic_down"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/c_4dp"
+            android:layout_marginEnd="@dimen/c_16dp"
+            android:scaleType="fitCenter"/>
+
+        <View
+            android:id="@+id/route_apply_ll_right"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/c_1dp"
+            android:layout_weight="1"
+            android:background="#99FFFFFF"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/c_12dp" />
+
+</LinearLayout>

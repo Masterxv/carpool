@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/c_60dp"
+    android:background="@drawable/background_chat_top">
+
+    <ImageView
+        android:layout_width="@dimen/c_10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/c_20dp"
+        android:src="@drawable/post_search_location"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/c_20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/post_search_result_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_25dp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/c_16dp"
+            android:text="重庆邮电大学"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/post_search_result_detail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_20dp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/c_14dp"
+            android:text="重庆邮电大学"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

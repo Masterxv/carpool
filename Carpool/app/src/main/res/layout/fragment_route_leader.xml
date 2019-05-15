@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@null"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="@dimen/c_20dp"
+        android:id="@+id/no_route_leader_tv"
+        android:gravity="center"
+        android:text="暂时还没有发布行程"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.campussay.carpool.ui.route.ParentRecyclerView
+        android:id="@+id/rv_route_leader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.campussay.carpool.ui.route.ParentRecyclerView>
+
+</RelativeLayout>

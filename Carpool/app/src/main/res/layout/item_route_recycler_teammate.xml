@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/c_23dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/c_4dp"
+        android:layout_height="@dimen/c_4dp"
+        android:layout_marginTop="@dimen/c_12dp"
+        android:background="@drawable/route_oval2" />
+
+    <TextView
+        android:layout_marginStart="@dimen/c_6dp"
+        android:id="@+id/route_recycler_tv"
+        android:layout_width="@dimen/c_150dp"
+        android:layout_height="@dimen/c_23dp"
+        android:textSize="@dimen/c_17dp" />
+
+</LinearLayout>

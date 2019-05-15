@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.campussay.carpool.ui.chat.widget.ChatContentLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/cl_chat"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.chat.ChatActivity">
+
+    <View
+        android:id="@+id/background_chat_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/c_50dp"
+        android:background="@drawable/background_chat_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_chat_title"
+        android:layout_width="@dimen/c_280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="小红"
+        android:textSize="@dimen/c_16dp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="#000000"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/cfl_chat_layout"
+        app:layout_constraintEnd_toEndOf="@+id/background_chat_top"
+        app:layout_constraintStart_toStartOf="@+id/background_chat_top"
+        app:layout_constraintTop_toTopOf="@+id/background_chat_top" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="内容"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/background_chat_top"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chat_title"
+        app:layout_constraintStart_toStartOf="@+id/tv_chat_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chat_title" />
+
+    <ImageView
+        android:id="@+id/iv_chat_back"
+        android:layout_width="@dimen/c_29dp"
+        android:layout_height="0dp"
+        android:src="@drawable/btn_back"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:paddingStart="@dimen/c_10dp"
+        android:paddingEnd="@dimen/c_10dp"
+        android:layout_marginStart="@dimen/c_6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/background_chat_top"
+        app:layout_constraintTop_toTopOf="@id/background_chat_top"/>
+
+    <com.campussay.carpool.ui.chat.widget.ChatFrameLayout
+        android:id="@+id/cfl_chat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/fl_chat"
+        app:layout_constraintTop_toBottomOf="@+id/background_chat_top">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_chat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <ImageView android:id="@+id/iv_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_55dp"
+            android:scaleType="fitCenter"
+            android:paddingTop="@dimen/c_35dp"
+            android:background="@null"/>
+
+   </com.campussay.carpool.ui.chat.widget.ChatFrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_chat_voice"
+        android:layout_width="@dimen/c_26dp"
+        android:layout_height="@dimen/c_26dp"
+        android:src="@drawable/ic_voice"
+        android:scaleType="fitCenter"
+        android:layout_marginStart="@dimen/c_12dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/fl_chat"
+        app:layout_constraintBottom_toBottomOf="@id/tv_chat_send"
+        app:layout_constraintTop_toTopOf="@+id/tv_chat_send"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#E8E8E8"
+        app:layout_constraintBottom_toTopOf="@id/fl_chat"/>
+
+    <FrameLayout
+        android:id="@+id/fl_chat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/c_20dp"
+        android:layout_marginEnd="@dimen/c_12dp"
+        android:paddingBottom="@dimen/c_12dp"
+        android:paddingTop="@dimen/c_12dp"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_chat_send"
+        app:layout_constraintStart_toEndOf="@id/iv_chat_voice" >
+
+        <EditText
+            android:id="@+id/et_chat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/et_chat"
+            android:paddingStart="@dimen/c_6dp"
+            android:paddingTop="@dimen/c_4dp"
+            android:paddingEnd="@dimen/c_4dp"
+            android:paddingBottom="@dimen/c_4dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:textColor="#000000"
+            android:maxLines="4"
+            android:minHeight="@dimen/c_28dp"
+            android:textCursorDrawable="@drawable/cursor_chat_in"
+            android:textSize="@dimen/c_14dp" />
+
+        <TextView
+            android:id="@+id/tv_chat_voice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/c_28dp"
+            android:background="@drawable/btn_chat_voice"
+            android:text="按下说话"
+            android:textColor="#444444"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/c_15dp"
+            android:textSize="@dimen/c_13dp"
+            android:visibility="gone"
+            android:clickable="true" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_chat_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/c_16dp"
+        android:background="@drawable/btn_chat_send"
+        android:clickable="true"
+        android:paddingStart="@dimen/c_8dp"
+        android:paddingTop="@dimen/c_4dp"
+        android:paddingEnd="@dimen/c_8dp"
+        android:paddingBottom="@dimen/c_4dp"
+        android:text="发送"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/c_13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fl_chat"
+        app:layout_constraintBottom_toBottomOf="@id/fl_chat" />
+
+    <!--<android.support.v4.view.ViewPager-->
+        <!--android:id="@+id/vp_chat"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="@dimen/c_200dp"-->
+        <!--android:visibility="gone"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--android:background="@drawable/background_chat_bottom">-->
+
+    <!--</android.support.v4.view.ViewPager>-->
+
+
+</com.campussay.carpool.ui.chat.widget.ChatContentLayout>

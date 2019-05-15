@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/c_8dp"
+    android:paddingBottom="@dimen/c_8dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_item_chat_right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/c_14dp"
+        android:textIsSelectable="true"
+        android:textColor="#000000"
+        android:paddingTop="@dimen/c_10dp"
+        android:maxWidth="@dimen/c_220dp"
+        android:paddingBottom="@dimen/c_10dp"
+        android:lineSpacingMultiplier ="1.1"
+        android:paddingStart="@dimen/c_10dp"
+        android:paddingEnd="@dimen/c_10dp"
+        android:layout_toStartOf="@+id/iv_item_chat_right_account"
+        android:background="@drawable/tv_chat_right"
+        android:layout_marginEnd="@dimen/c_14dp"/>
+
+    <ImageView
+        android:id="@+id/iv_item_chat_right_account"
+        android:layout_width="@dimen/c_34dp"
+        android:layout_height="@dimen/c_34dp"
+        android:src="@drawable/ic_voice"
+        android:scaleType="centerCrop"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/c_14dp"/>
+
+    <TextView
+        android:id="@+id/tv_item_chat_right_fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="失败"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_toStartOf="@+id/tv_item_chat_right_text"
+        android:layout_marginEnd="@dimen/c_10dp"
+        android:textColor="#CE1056"/>
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/c_91dp"
+    android:layout_marginBottom="@dimen/c_10dp"
+    android:layout_marginTop="@dimen/c_6dp"
+    android:layout_gravity="center_horizontal"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/recommend_firstPlace_tv"
+        android:layout_width="@dimen/c_125dp"
+        android:layout_height="@dimen/c_20dp"
+        android:textColor="#000000"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/c_15dp"
+        android:layout_marginStart="@dimen/c_15dp"
+        android:text=" 重庆邮电大学 "
+        android:textSize="@dimen/c_14dp" />
+
+
+    <View
+        android:id="@+id/v_jiantou"
+        android:background="@drawable/recommend_arrow_route"
+        android:layout_width="@dimen/c_28dp"
+        android:layout_height="@dimen/c_12dp"
+        android:layout_marginTop="@dimen/c_20dp"
+        android:layout_marginStart="@dimen/c_6dp"
+        android:layout_toEndOf="@+id/recommend_firstPlace_tv"/>
+
+    <TextView
+        android:id="@+id/recommend_endPlace_tv"
+        android:layout_width="@dimen/c_125dp"
+        android:layout_height="@dimen/c_20dp"
+        android:layout_marginTop="@dimen/c_15dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="start"
+        android:textColor="#000000"
+        android:text=" 重庆工商大学 "
+        android:textSize="@dimen/c_14dp"
+        android:layout_marginStart="@dimen/c_14dp"
+        android:layout_toEndOf="@+id/v_jiantou" />
+
+
+    <TextView
+        android:id="@+id/recommend_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/c_15dp"
+        android:layout_marginTop="@dimen/c_37dp"
+        android:gravity="center"
+        android:text="2019年3月18日       11: 00"
+        android:textSize="@dimen/c_12dp" />
+
+    <TextView
+        android:id="@+id/recommend_master_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/c_15dp"
+        android:layout_marginBottom="@dimen/c_15dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textColor="#cccccc"
+        android:text="小明"
+        android:textSize="@dimen/c_12dp" />
+
+    <Button
+        android:id="@+id/post_join"
+        android:layout_width="@dimen/c_55dp"
+        android:layout_height="@dimen/c_22dp"
+        android:layout_marginBottom="@dimen/c_15dp"
+        android:layout_marginEnd="@dimen/c_15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:background="@drawable/recommend_button"
+        android:text="加入"
+        android:textSize="@dimen/c_13dp" />
+
+    <View
+        android:layout_width="@dimen/c_55dp"
+        android:layout_height="@dimen/c_22dp"
+        android:layout_marginBottom="@dimen/c_15dp"
+        android:layout_marginEnd="@dimen/c_15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:background="@drawable/recommend_button"/>
+</RelativeLayout>

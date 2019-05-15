@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/c_300dp"
+    android:layout_height="@dimen/c_180dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/c_30dp"
+        android:gravity="center"
+        android:text="您确定要删除此行程吗?"
+        android:textSize="@dimen/c_20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <Button
+        android:textColor="#ffffff"
+        android:id="@+id/delete_cancel"
+        android:text="取 消"
+        android:textSize="@dimen/c_15dp"
+        android:layout_width="@dimen/c_100dp"
+        android:layout_height="@dimen/c_40dp"
+        android:background="@drawable/route_delete_button"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/delete_ok" />
+
+    <Button
+        android:id="@+id/delete_ok"
+        android:text="确 定"
+        android:textSize="@dimen/c_15dp"
+        android:background="@drawable/route_delete_button"
+        android:textColor="#ffffff"
+        android:layout_width="@dimen/c_100dp"
+        android:layout_height="@dimen/c_40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.85"/>
+
+    </View>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.campussay.carpool.ui.self.view.CircleImageView
+        android:id="@+id/self_iv_head"
+        android:layout_width="@dimen/c_60dp"
+        android:layout_height="@dimen/c_60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/c_25dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/meizi7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/self_iv_gender"
+        android:layout_width="@dimen/c_20dp"
+        android:layout_height="@dimen/c_20dp"
+        android:layout_marginStart="12dp"
+        android:src="@mipmap/man_32"
+        app:layout_constraintBottom_toBottomOf="@+id/self_tv_id"
+        app:layout_constraintStart_toEndOf="@+id/self_iv_head"
+        app:layout_constraintTop_toTopOf="@+id/self_tv_id" />
+
+    <TextView
+        android:id="@+id/self_tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="你的ID"
+        android:textColor="#000000"
+        android:textSize="@dimen/c_18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/self_iv_head"
+        app:layout_constraintStart_toEndOf="@+id/self_iv_gender"
+        app:layout_constraintTop_toTopOf="@+id/self_iv_head" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/self_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/c_50dp"
+        android:layout_marginStart="@dimen/c_8dp"
+        android:layout_marginTop="@dimen/c_20dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/self_iv_head"
+        app:tabBackground="@android:color/transparent"
+        app:tabIndicatorColor="#f4b712"
+        app:tabSelectedTextColor="#f4b712"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabTextColor="#666666">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/self_tab_message"
+            android:layout_width="@dimen/c_120dp"
+            android:layout_height="match_parent"
+            android:text="消息" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/self_tab_friends"
+            android:layout_width="@dimen/c_120dp"
+            android:layout_height="match_parent"
+            android:text="好友" />
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/self_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/standardBackgroundColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/self_tab" />
+
+
+</android.support.constraint.ConstraintLayout>

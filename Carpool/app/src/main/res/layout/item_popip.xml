@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:background="#EEC900">
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="@dimen/c_60dp"
+        android:layout_height="@dimen/c_30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="删除"
+        android:textColor="#000000"
+        android:textSize="@dimen/c_16dp" />
+
+    <TextView
+        android:id="@+id/tv_first"
+        android:layout_width="@dimen/c_60dp"
+        android:layout_height="@dimen/c_30dp"
+        android:padding="5dp"
+        android:text="置顶"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/c_16dp" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="@dimen/c_5dp"
+    tools:context=".ui.self.FriendsActivity">
+
+    <TextView
+        android:id="@+id/friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="好友id"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/friend_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="手机在线"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friend_name" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/friend_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/friend_status"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="@dimen/c_5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friend_recycler_view"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/friend_et_send"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/c_60dp"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/c_5dp"
+            android:layout_weight="10"
+            android:hint="发送消息"/>
+        <Button
+            android:id="@+id/friend_btn_send"
+            android:text="发 送"
+            android:textSize="18sp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/c_60dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"/>
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

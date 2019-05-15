@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:textSize="@dimen/c_12dp"
+    android:textColor="#c9c9c7"
+    android:paddingTop="@dimen/c_12dp"
+    android:paddingBottom="@dimen/c_10dp"
+    android:text="昨天 19:09" />
